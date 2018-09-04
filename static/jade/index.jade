@@ -34,37 +34,37 @@ html(lang="ru")
 							.calculator__element.calculator__element--small
 								label(for="").calculator__label График платежей
 									.calculator__pseudoradio.calculator__pseudoradio--column
-										input(type="radio").calculator__radio
-										label(for="") Убывающие платежи
+										input(type="radio", id="radio3", name="rgaphik-pl", checked).calculator__radio
+										label(for="radio3") Убывающие платежи
 									.calculator__pseudoradio.calculator__pseudoradio--column
-										input(type="radio").calculator__radio
-										label(for="") Аннуитетный
+										input(type="radio", id="radio4", name="rgaphik-pl").calculator__radio
+										label(for="radio4") Аннуитетный
 							.calculator__element.calculator__element--small
 								label(for="").calculator__label Сроки в годах
 									.calculator__row
 										.calculator__pseudoradio
-											input(type="radio").calculator__radio
-											label(for="") 1
+											input(type="radio", name="sroki", id="radio5", checked).calculator__radio
+											label(for="radio5") 1
 										.calculator__pseudoradio
-											input(type="radio").calculator__radio
-											label(for="") 2
+											input(type="radio", name="sroki", id="radio6").calculator__radio
+											label(for="radio6") 2
 										.calculator__pseudoradio
-											input(type="radio").calculator__radio
-											label(for="") 3
+											input(type="radio", name="sroki", id="radio7").calculator__radio
+											label(for="radio7") 3
 							.calculator__element.calculator__element--small
 								button(type="submit").calculator__btn.calculator__btn--white Рассчитать
 				.calculator-contact
-					h2.calculator__title Оставьте заявку, и мы подберем для вас лучшие условия финансирования
-					span.calculator__warning * — Поля обязательные для заполнения.
+					h3.calculator__subtitle Оставьте заявку, и мы подберем для вас лучшие условия финансирования
+					span.calculator__info * — Поля обязательные для заполнения.
 					form(action="")
-						.calculator__row
+						.calculator__row.calculator__row--space-between
 							.calculator__element.calculator__element--medium
 								label(for="type").calculator__label Ваше имя*
 								input(type="text").calculator__input
 							.calculator__element.calculator__element--small
 								label(for="type").calculator__label Телефон*
 								input(type="text").calculator__input
-						.calculator__row
+						.calculator__row.calculator__row--space-between
 							.calculator__element.calculator__element--small
 								label(for="type").calculator__label E-mail
 								input(type="text").calculator__input
@@ -78,12 +78,13 @@ html(lang="ru")
 							.calculator__element.calculator__element--small
 								label(for="type").calculator__label Стоимость, ₽
 								input(type="text").calculator__input
-						.calculator__row
-							.calculator__element
-								input(type="checkbox").calculator__checkbox
-								label(for="") Я согласен(а) на 
-									a(href="#") обработку персональных данных
-							.calculator__element
-								button(type="submit") Отправить заявку
+						.calculator__row.calculator__row--space-between
+							.calculator__element.calculator__element--small
+								.calculator__pseudocheckbox
+									input(type="checkbox", id="personal-info").calculator__checkbox
+									label(for="personal-info") Я согласен(а) на 
+										a(href="#") обработку персональных данных
+							.calculator__element.calculator__element--small
+								button(type="submit").calculator__btn.calculator__btn--blue Отправить заявку
 		+footer
 		+scripts
