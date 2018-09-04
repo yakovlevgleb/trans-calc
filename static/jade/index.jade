@@ -1,0 +1,89 @@
+include blocks/blocks
+
+doctype html
+html(lang="ru")
+	+head
+	body
+		section.calculator
+			.calculator__wrapper
+				.calculator-form
+					h2.calculator__title Онлайн калькулятор стоимости лизинга
+					form(action="")
+						.calculator__row.calculator__row--space-between
+							.calculator__element.calculator__element--small
+								label(for="type").calculator__label Тип имущества
+								select(id="type").calculator__select
+									option(value)
+									option(value="1") Легковой транспорт
+									option(value="2") Грузовой транспорт
+									option(value="3") Двухколесный транспорт
+							.calculator__element.calculator__element--small
+								label(for="cost").calculator__label Стоимость, ₽	
+								input(type="text").calculator__input
+							.calculator__element.calculator__element--small
+								label(for="ava").calculator__label Аванс
+								.calculator__row.calculator__row--space-between
+									input(type="text").calculator__input.calculator__input--w222
+									.calculator__pseudoradio
+										input(type="radio", name="avans", id="radio1", checked).calculator__radio
+										label(for="radio1") ₽
+									.calculator__pseudoradio
+										input(type="radio", name="avans", id="radio2").calculator__radio
+										label(for="radio2") % 
+						.calculator__row.calculator__row--space-between
+							.calculator__element.calculator__element--small
+								label(for="").calculator__label График платежей
+									.calculator__pseudoradio.calculator__pseudoradio--column
+										input(type="radio").calculator__radio
+										label(for="") Убывающие платежи
+									.calculator__pseudoradio.calculator__pseudoradio--column
+										input(type="radio").calculator__radio
+										label(for="") Аннуитетный
+							.calculator__element.calculator__element--small
+								label(for="").calculator__label Сроки в годах
+									.calculator__row
+										.calculator__pseudoradio
+											input(type="radio").calculator__radio
+											label(for="") 1
+										.calculator__pseudoradio
+											input(type="radio").calculator__radio
+											label(for="") 2
+										.calculator__pseudoradio
+											input(type="radio").calculator__radio
+											label(for="") 3
+							.calculator__element.calculator__element--small
+								button(type="submit").calculator__btn.calculator__btn--white Рассчитать
+				.calculator-contact
+					h2.calculator__title Оставьте заявку, и мы подберем для вас лучшие условия финансирования
+					span.calculator__warning * — Поля обязательные для заполнения.
+					form(action="")
+						.calculator__row
+							.calculator__element.calculator__element--medium
+								label(for="type").calculator__label Ваше имя*
+								input(type="text").calculator__input
+							.calculator__element.calculator__element--small
+								label(for="type").calculator__label Телефон*
+								input(type="text").calculator__input
+						.calculator__row
+							.calculator__element.calculator__element--small
+								label(for="type").calculator__label E-mail
+								input(type="text").calculator__input
+							.calculator__element.calculator__element--small
+								label(for="type").calculator__label Тип имущества
+								select(id="type").calculator__select
+									option(value)
+									option(value="1") Легковой транспорт
+									option(value="2") Грузовой транспорт
+									option(value="3") Двухколесный транспорт
+							.calculator__element.calculator__element--small
+								label(for="type").calculator__label Стоимость, ₽
+								input(type="text").calculator__input
+						.calculator__row
+							.calculator__element
+								input(type="checkbox").calculator__checkbox
+								label(for="") Я согласен(а) на 
+									a(href="#") обработку персональных данных
+							.calculator__element
+								button(type="submit") Отправить заявку
+		+footer
+		+scripts
