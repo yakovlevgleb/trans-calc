@@ -10,7 +10,8 @@ const icons = [dirs.source + '/i/**/*.{gif,png,jpg,jpeg,svg,ico}'];
 
 const jsList = [
 	dirs.source + '/js/ext/jquery.min.js',
-	dirs.source + '/js/ext/jquery.formstyler.min.js'
+	dirs.source + '/js/ext/jquery.formstyler.min.js',
+	dirs.source + '/js/ext/jquery.inputmask.bundle.min.js',
 ];
 
 const folder = process.env.folder;

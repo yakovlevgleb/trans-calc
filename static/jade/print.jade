@@ -11,25 +11,27 @@ html(lang="ru")
 					h1.h1 ООО «ТРАНСЛИЗИНГ»
 				.print-header__info
 					.print-header__tel
+						img(src="./static/img/", alt="")
 						span 8-800-4444-500
 					.print-header__site
 						span www.transleasing.ru
 		main.print-main
 			.wrapper
-				.print-main__text
-					p Благодарим Вас за обращение в компанию «Транслизинг». Вы можете воспользоваться готовым лизинговым решением или заказать индивиуальный расчет.
-				.print-main__banner
-					span Единые решения
-						br
-						| для всей страны
-				.print-main__data Дата обращения
-					span 03.08.2018
+				//- .print-main__text
+				//- 	p Благодарим Вас за обращение в компанию «Транслизинг». Вы можете воспользоваться готовым лизинговым решением или заказать индивиуальный расчет.
+				//- .print-main__banner
+				//- 	img(src="/../img/print-banner-img.jpg", alt="")
+				//- 	span Единые решения
+				//- 		br
+				//- 		| для всей страны
+				.print-main__data Дата обращения:
+					span  03.08.2018
 				.print-main__additional-info
 					.print-main__additional-info-text
-						span Параметры лизинга
+						span Предмет лизинга:&nbsp;&nbsp;&nbsp;
 						.print-main__additional-info-product Транспорт, Спецтехника
 					.print-main__additional-info-text
-						span Стоимость, с НДС
+						span Стоимость, с НДС:&nbsp;&nbsp;&nbsp;
 						.print-main__additional-info-cost 1 000 000, 00 ₽
 				.print-main__param
 					h2.h2 Параметры проекта
@@ -181,21 +183,17 @@ html(lang="ru")
 							.print-main__total-blue 1 135 190,20 ₽ 
 
 					.print-main__total-row
-						.print-main__total-left
-							.print-main__total-text Средний платеж
-						.print-main__total-right
-							.print-main__total-text 47 299, 58 ₽ 
+						.print-main__total-left Средний платеж
+						.print-main__total-right 47 299, 58 ₽ 
 
 					.print-main__total-row
-						.print-main__total-left
-							.print-main__total-text Ср/годовое удержание
-						.print-main__total-right
-							.print-main__total-text 6,76%
+						.print-main__total-left Ср/годовое удержание
+						.print-main__total-right 6,76%
 			
 		footer.print-footer
 			.wrapper
 				.print-footer__company ООО«ТРАНСЛИЗИНГ»
-				.print-footer__info-row
+				.print-footer__row
 					.print-footer__info
 						.print-footer__info-row
 							.print-footer__info-left Юридический адрес
