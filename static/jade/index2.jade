@@ -52,14 +52,13 @@ html(lang="ru")
 											input(type="radio", name="sroki", id="radio7").calculator__radio
 											label(for="radio7") 3
 							.calculator__element.calculator__element--small
-								button(type="submit").calculator__btn.calculator__btn--white Рассчитать
+								button(type="submit").calculator__btn.calculator__btn--white.calculator__btn--hidden Рассчитать
 				.calculation
 					.calculation__row
 						span.calculation__title Ежемесячный платеж в т.ч. НДС* 
 						span.calculation__val 55 312,58 ₽
 						span.calculation__vnds 50 000, 58 ₽ (без НДС)
-						button(type="button").calculation__hide-graph Скрыть график платежей 
-					.calculation__row
+					.calculation__row.calculation__row--space-between
 						.calculation__column
 							span.calculation__subtitle График ежемесячных платежей
 							.calculation__row
@@ -74,173 +73,207 @@ html(lang="ru")
 									span.calculation__text-value 3 года
 						.calculation__row
 							a(href="#").calculation__print Распечатать
-							a(href="#").calculation__download Скачать в PDF
+							a(href="#").calculation__download Скачать PDF
 					.calculation__tables
 						.calculation__table-column
-							.calculation__table-header 1 год
-							table.calculation__table
-								tr
-									th Месяц
-									th Платеж, ₽
-									th
-								tr
-									td 1
-									td 55 312.58
-									td 50 000.58 (без НДС)
-								tr
-									td 2
-									td 55 312.58
-									td 50 000.58 (без НДС)
-								tr
-									td 3
-									td 55 312.58
-									td 50 000.58 (без НДС)
-								tr
-									td 4
-									td 55 312.58
-									td 50 000.58 (без НДС)
-								tr
-									td 5
-									td 55 312.58
-									td 50 000.58 (без НДС)
-								tr
-									td 6
-									td 55 312.58
-									td 50 000.58 (без НДС)
-								tr
-									td 7
-									td 55 312.58
-									td 50 000.58 (без НДС)
-								tr
-									td 8
-									td 55 312.58
-									td 50 000.58 (без НДС)
-								tr
-									td 9
-									td 55 312.58
-									td 50 000.58 (без НДС)
-								tr
-									td 10
-									td 55 312.58
-									td 50 000.58 (без НДС)
-								tr
-									td 11
-									td 55 312.58
-									td 50 000.58 (без НДС)
-								tr
-									td 12
-									td 55 312.58
-									td 50 000.58 (без НДС)
+							.calculation__year 1 год
+							.calculation__table
+								.calculation__table-row
+									.calculation__table-header Месяц
+									.calculation__table-header Платеж, ₽
+								.calculation__table-row
+									.calculation__table-item 1
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
+								.calculation__table-row
+									.calculation__table-item 2
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
+								.calculation__table-row
+									.calculation__table-item 3
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
+								.calculation__table-row
+									.calculation__table-item 4
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
+								.calculation__table-row
+									.calculation__table-item 5
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
+								.calculation__table-row
+									.calculation__table-item 6
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
+								.calculation__table-row
+									.calculation__table-item 7
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
+								.calculation__table-row
+									.calculation__table-item 8
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
+								.calculation__table-row
+									.calculation__table-item 9
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
+								.calculation__table-row
+									.calculation__table-item 10
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
+								.calculation__table-row
+									.calculation__table-item 11
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
+								.calculation__table-row
+									.calculation__table-item 12
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
 						.calculation__table-column
-							.calculation__table-header 2 год
-							table.calculation__table
-								tr
-									th Месяц
-									th Платеж, ₽
-									th
-								tr
-									td 1
-									td 55 312.58
-									td 50 000.58 (без НДС)
-								tr
-									td 2
-									td 55 312.58
-									td 50 000.58 (без НДС)
-								tr
-									td 3
-									td 55 312.58
-									td 50 000.58 (без НДС)
-								tr
-									td 4
-									td 55 312.58
-									td 50 000.58 (без НДС)
-								tr
-									td 5
-									td 55 312.58
-									td 50 000.58 (без НДС)
-								tr
-									td 6
-									td 55 312.58
-									td 50 000.58 (без НДС)
-								tr
-									td 7
-									td 55 312.58
-									td 50 000.58 (без НДС)
-								tr
-									td 8
-									td 55 312.58
-									td 50 000.58 (без НДС)
-								tr
-									td 9
-									td 55 312.58
-									td 50 000.58 (без НДС)
-								tr
-									td 10
-									td 55 312.58
-									td 50 000.58 (без НДС)
-								tr
-									td 11
-									td 55 312.58
-									td 50 000.58 (без НДС)
-								tr
-									td 12
-									td 55 312.58
-									td 50 000.58 (без НДС)
+							.calculation__year 2 год
+							.calculation__table
+								.calculation__table-row
+									.calculation__table-header Месяц
+									.calculation__table-header Платеж, ₽
+									.calculation__table-header
+								.calculation__table-row
+									.calculation__table-item 1
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
+								.calculation__table-row
+									.calculation__table-item 2
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
+								.calculation__table-row
+									.calculation__table-item 3
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
+								.calculation__table-row
+									.calculation__table-item 4
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
+								.calculation__table-row
+									.calculation__table-item 5
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
+								.calculation__table-row
+									.calculation__table-item 6
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
+								.calculation__table-row
+									.calculation__table-item 7
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС))
+								.calculation__table-row
+									.calculation__table-item 8
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
+								.calculation__table-row
+									.calculation__table-item 9
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
+								.calculation__table-row
+									.calculation__table-item 10
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
+								.calculation__table-row
+									.calculation__table-item 11
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
+								.calculation__table-row
+									.calculation__table-item 12
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
 						.calculation__table-column
-							.calculation__table-header 3 год
-							table.calculation__table
-								tr
-									th Месяц
-									th Платеж, ₽
-									th
-								tr
-									td 1
-									td 55 312.58
-									td 50 000.58 (без НДС)
-								tr
-									td 2
-									td 55 312.58
-									td 50 000.58 (без НДС)
-								tr
-									td 3
-									td 55 312.58
-									td 50 000.58 (без НДС)
-								tr
-									td 4
-									td 55 312.58
-									td 50 000.58 (без НДС)
-								tr
-									td 5
-									td 55 312.58
-									td 50 000.58 (без НДС)
-								tr
-									td 6
-									td 55 312.58
-									td 50 000.58 (без НДС)
-								tr
-									td 7
-									td 55 312.58
-									td 50 000.58 (без НДС)
-								tr
-									td 8
-									td 55 312.58
-									td 50 000.58 (без НДС)
-								tr
-									td 9
-									td 55 312.58
-									td 50 000.58 (без НДС)
-								tr
-									td 10
-									td 55 312.58
-									td 50 000.58 (без НДС)
-								tr
-									td 11
-									td 55 312.58
-									td 50 000.58 (без НДС)
-								tr
-									td 12
-									td 55 312.58
-									td 50 000.58 (без НДС)
+							.calculation__year 3 год
+							.calculation__table
+								.calculation__table-row
+									.calculation__table-header Месяц
+									.calculation__table-header Платеж, ₽
+								.calculation__table-row
+									.calculation__table-item 1
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
+								.calculation__table-row
+									.calculation__table-item 2
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
+								.calculation__table-row
+									.calculation__table-item 3
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
+								.calculation__table-row
+									.calculation__table-item 4
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
+								.calculation__table-row
+									.calculation__table-item 5
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
+								.calculation__table-row
+									.calculation__table-item 6
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
+								.calculation__table-row
+									.calculation__table-item 7
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
+								.calculation__table-row
+									.calculation__table-item 8
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
+								.calculation__table-row
+									.calculation__table-item 9
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
+								.calculation__table-row
+									.calculation__table-item 10
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
+								.calculation__table-row
+									.calculation__table-item 11
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
+								.calculation__table-row
+									.calculation__table-item 12
+									.calculation__table-item 55 312.58
+									.calculation__table-item
+										small 50 000.58 (без НДС)
 					.calculation__additional-info 
 						p * Расчеты носят информационный характер и не являтюся официальной офертой. За подробной актуальной информацией о действующих условиях обращайтесь к нашим специалистам.
 				.calculator-contact
@@ -276,6 +309,6 @@ html(lang="ru")
 									label(for="personal-info") Я согласен(а) на 
 										a(href="#") обработку персональных данных
 							.calculator__element.calculator__element--small
-								button(type="submit").calculator__btn.calculator__btn--blue Отправить заявку
+								button(type="submit").calculator__btn.calculator__btn--blue Получить предложение
 		+footer
 		+scripts
