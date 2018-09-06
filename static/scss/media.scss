@@ -31,7 +31,7 @@
 			}
 
 			&--medium {
-	   	 width: calc((100% / 3) * 2 - 6px);
+				width: calc((100% / 3) * 2 - 6px);
 			}
 		}
 	}
@@ -57,8 +57,8 @@
 
 		&__input {
 			&--w222 {
+				width: 88%;
 				max-width: inherit;
-	    	width: 88%;
 			}
 		}
 
@@ -70,7 +70,7 @@
 	}
 
 	form {
-		&>.calculator__row {
+		& > .calculator__row {
 			flex-direction: column;
 		}
 	}
@@ -78,10 +78,10 @@
 
 @media only screen and (max-width: 1023px) {
 	.calculation {
-		padding-left: 25px;
-		padding-right: 25px;
 		padding-top: 25px;
+		padding-right: 25px;
 		padding-bottom: 40px;
+		padding-left: 25px;
 
 		&__tables {
 			flex-wrap: wrap;
@@ -89,8 +89,8 @@
 		}
 
 		&__table-column {
-	    width: calc(100% / 2 - 20px);
-	    margin-right: 0;
+			width: calc(100% / 2 - 20px);
+			margin-right: 0;
 			margin-bottom: 30px;
 		}
 	}
@@ -113,6 +113,7 @@
 		&__print {
 			margin-right: 0;
 			margin-bottom: 20px;
+
 			align-self: flex-start;
 		}
 
@@ -164,10 +165,10 @@
 		padding: 25px 15px;
 	}
 	.calculation {
+		padding-top: 40px;
+		padding-right: 15px;
+		padding-bottom: 40px;
 		padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 40px;
-    padding-bottom: 40px;
 
 		&__table-column {
 			width: calc(100%);
@@ -186,5 +187,4 @@
 }
 
 @media only screen and (max-width: 980px) {
-
 }
