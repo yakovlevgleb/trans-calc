@@ -273,7 +273,9 @@ a {
 
 		font-size: 30px;
 		font-weight: bold;
-		line-height: 11px;
+		line-height: 1;
+		margin-bottom: 10px;
+		display: inline-block;
 	}
 
 	&__checkbox {
