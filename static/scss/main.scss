@@ -123,6 +123,13 @@ a {
 			margin-left: 0;
 		}
 
+		&--lh22 {
+			margin-left: 20px;
+			label {
+				line-height: 42px;
+			}
+		}
+
 		label {
 			position: relative;
 			padding-left: 26px;
@@ -394,6 +401,9 @@ a {
 		display: flex;
 		flex-direction: column;
 		margin-right: 80px;
+		&:last-child {
+			margin-right: 0;
+		}
 	}
 
 	&__print {
@@ -504,13 +514,10 @@ a {
 		margin-top: 27px;
 		margin-bottom: 15px;
 		&:nth-child(1) {
-			width: 91px
+			width: 32%;
 		}
 		&:nth-child(2) {
-			width: 88px
-		}
-		&:nth-child(3) {
-			width: auto;
+			width: 68%;
 			white-space: nowrap;
 		}
 	}
@@ -537,13 +544,14 @@ a {
 		}
 
 		&:nth-child(1) {
-			width: 91px
+			width: 32%;
 		}
 		&:nth-child(2) {
-			width: 88px
+			width: 31%;
+			white-space: nowrap;
 		}
 		&:nth-child(3) {
-			width: auto;
+			width: 37%;
 			white-space: nowrap;
 		}
 	}
