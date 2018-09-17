@@ -87,4 +87,23 @@ $(document).ready(function() {
 		}
 	}).init();
 
+	window.trans.avansChanger = ({
+		init: function() {
+			$('.js-avans-change').on('change', function () {
+				var _this = $('.js-avans-change:checked').attr('id');
+				$('.calculator__input--avans.calculator__input--active').removeClass('calculator__input--active')
+				$('.calculator__input--avans[name^="'+ _this +'"').addClass('calculator__input--active')
+			});
+		}
+	}).init();
+
+	$('.js-cost').on('keyup', function () {
+		$('.js-cost').val($(this).val());
+	});
+
+	$('.js-type').on('change', function () {
+		$('.js-type').val($(this).val());
+		$('.js-type').trigger('refresh');
+	})
+
 });

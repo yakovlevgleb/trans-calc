@@ -127,6 +127,14 @@ a {
 		&--w222 {
 			max-width: 222px;
 		}
+
+		&--avans {
+			display: none;
+		}
+
+		&--active {
+			display: inline-block;
+		}
 	}
 
 	&__pseudoradio {
