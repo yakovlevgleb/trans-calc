@@ -94,16 +94,18 @@ $(document).ready(function() {
 				$('.calculator__input--avans.calculator__input--active').removeClass('calculator__input--active')
 				$('.calculator__input--avans[name^="'+ _this +'"').addClass('calculator__input--active')
 			});
+
+			$('.js-cost').on('keyup', function () {
+				$('.js-cost').val($(this).val());
+			});
+
+			$('.js-type').on('change', function () {
+				$('.js-type').val($(this).val());
+				$('.js-type').trigger('refresh');
+			})
 		}
 	}).init();
 
-	$('.js-cost').on('keyup', function () {
-		$('.js-cost').val($(this).val());
-	});
 
-	$('.js-type').on('change', function () {
-		$('.js-type').val($(this).val());
-		$('.js-type').trigger('refresh');
-	})
 
 });
