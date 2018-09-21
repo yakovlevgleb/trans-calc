@@ -9,7 +9,6 @@ const images = [dirs.source + '/img/**/*.{gif,png,jpg,jpeg,svg,ico}'];
 const icons = [dirs.source + '/i/**/*.{gif,png,jpg,jpeg,svg,ico}'];
 
 const jsList = [
-	dirs.source + '/js/ext/jquery.min.js',
 	dirs.source + '/js/ext/jquery.formstyler.min.js',
 	dirs.source + '/js/ext/jquery.inputmask.bundle.min.js',
 ];
